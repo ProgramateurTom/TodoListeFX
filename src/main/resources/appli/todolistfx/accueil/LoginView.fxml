@@ -9,6 +9,7 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
     <Label fx:id="welcomeText"/>
-    <Button text="Ecran-Majestueux3" onAction="#onHelloButtonClick"/>
-    <Button text="The Radiant Screen!" onAction="#blackAndWhiteMonsters"/>
+    <Button text="Mot de passe oublié" onAction="#onHelloButtonClick"/>
+    <Button text="Inscription" onAction="#blackAndWhiteMonsters"/>
+    <Button text="Connexion" onAction="#connexion"/>
 </VBox>
