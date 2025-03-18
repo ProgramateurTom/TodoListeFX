@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Database {
     private static final String SERVEUR = "localhost";
-    private static final String NOM_BDD = "nom_de_la_base";
+    private static final String NOM_BDD = "SLAM1_todolist";
     private static final String UTILISATEUR = "root";
     private static final String MOT_DE_PASSE = "";
     private static String getUrl() {
@@ -21,5 +21,13 @@ public class Database {
             System.out.println("Erreur de connexion : " + e.getMessage());
         }
         return cnx;
+    }
+    public static void main(String[] args) {
+        Connection cnx = getConnexion();
+        if (cnx != null) {
+            System.out.println("Connexion établie avec succès !");
+        } else {
+            System.out.println("Échec de la connexion à la base de données.");
+        }
     }
 }
