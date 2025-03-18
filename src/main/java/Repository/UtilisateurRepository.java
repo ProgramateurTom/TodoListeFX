@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class UtilisateurRepository {
     private Connection cnx;
@@ -56,6 +57,10 @@ public class UtilisateurRepository {
             System.out.println("Erreur lors de l'ajout de l'utilisateur : " + e.getMessage());
         }
         return null;
+    }
+    public ArrayList<Utilisateur> getTousLesUtilisateurs() {
+        String sql = "Select * from utilisateur";
+        System.out.println("getTousLesUtilisateurs");
     }
 
 }
