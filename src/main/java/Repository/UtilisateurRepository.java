@@ -1,6 +1,7 @@
 package Repository;
 
 import Database.Database;
+import model.Liste;
 import model.Utilisateur;
 
 import java.sql.Connection;
@@ -60,7 +61,8 @@ public class UtilisateurRepository {
     }
     public ArrayList<Utilisateur> getTousLesUtilisateurs() {
         String sql = "Select * from utilisateur";
-        System.out.println("getTousLesUtilisateurs");
+        System.out.println(sql);
+        return null;
     }
 
 }
