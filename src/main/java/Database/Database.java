@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Database {
-    private static final String SERVEUR = "localhost";
+    private static final String SERVEUR = "localhost:3307";
     private static final String NOM_BDD = "SLAM1_todolist";
     private static final String UTILISATEUR = "root";
     private static final String MOT_DE_PASSE = "";
