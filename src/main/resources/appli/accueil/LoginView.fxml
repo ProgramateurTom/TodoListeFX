@@ -22,6 +22,6 @@
             </font>
         </Label>
         <TextField fx:id="emailField" layoutX="35.0" layoutY="86.0" />
-        <PasswordField fx:id="mitDePasseField" layoutX="35.0" layoutY="157.0" />
+        <PasswordField fx:id="motDePasseField" layoutX="35.0" layoutY="157.0" />
     </children>
 </Pane>
