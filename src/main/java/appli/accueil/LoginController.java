@@ -55,5 +55,4 @@ public class LoginController {
         System.out.println("Redirection...");
         StartApplication.changeScene("accueil/inscription");
     }
-
 }

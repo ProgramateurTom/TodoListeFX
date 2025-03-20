@@ -12,27 +12,20 @@ import Repository.UtilisateurRepository;
 
 public class InscriptionController {
     private UtilisateurRepository utilisateurRepository = new UtilisateurRepository();
-
     @FXML
     private PasswordField confirmationField;
-
     @FXML
     private TextField emailField;
-
     @FXML
     private PasswordField motDePasseField;
-
     @FXML
     private TextField nomField;
-
     @FXML
     private TextField prenomField;
-
     @FXML
     void btnConnexion(ActionEvent event) throws IOException {
         StartApplication.changeScene("accueil/login");
     }
-
     @FXML
     void btnInscription(ActionEvent event) throws IOException {
         if(confirmationField.getText().isEmpty() ||
@@ -54,5 +47,4 @@ public class InscriptionController {
             }
         }
     }
-
 }

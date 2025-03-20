@@ -12,10 +12,7 @@ import java.util.ArrayList;
 
 public class UtilisateurRepository {
     private Connection cnx;
-
-    public UtilisateurRepository() {
-        this.cnx = Database.getConnexion();
-    }
+    public UtilisateurRepository() {this.cnx = Database.getConnexion();}
     public boolean ajouterUtilisateur(Utilisateur utilisateur) {
         String sql = "INSERT INTO utilisateur (nom, prenom, email, mot_de_passe, role) VALUES (?, ?, ?, ?, ?)";
         try {
@@ -38,11 +35,9 @@ public class UtilisateurRepository {
         try {
             PreparedStatement stmt = this.cnx.prepareStatement(sql);
             stmt.setString(1, email);
-
             ResultSet rs = stmt.executeQuery();
             if(rs.next()){
                 System.out.println("Utilisateur trouvé !");
-
                 Utilisateur user = new Utilisateur(
                         rs.getInt("id_utilisateur"),
                         rs.getString("nom"),
@@ -64,5 +59,4 @@ public class UtilisateurRepository {
         System.out.println(sql);
         return null;
     }
-
 }
