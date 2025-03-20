@@ -59,4 +59,16 @@ public class UtilisateurRepository {
         System.out.println(sql);
         return null;
     }
+    public ArrayList<Utilisateur> getEmailUtilisateurs(){
+        String mail = "Delete * FROM utilisateur" +
+                " WHERE InnerJoin(Select id_utilisateur From utilisateur)" +
+                " where email = ?";
+        System.out.println(mail);
+        return null;
+    }
+    public ArrayList<Utilisateur> ModifUtilisateur(Utilisateur utilisateur) {
+        String modif = "Update * From Utilisateur";
+        System.out.println(modif);
+        return null;
+    }
 }
