@@ -9,9 +9,7 @@ public class Database {
     private static final String NOM_BDD = "SLAM1_todolist";
     private static final String UTILISATEUR = "root";
     private static final String MOT_DE_PASSE = "";
-    private static String getUrl() {
-        return "jdbc:mysql://" + SERVEUR + "/" + NOM_BDD + "?serverTimezone=UTC";
-    }
+    private static String getUrl() {return "jdbc:mysql://" + SERVEUR + "/" + NOM_BDD + "?serverTimezone=UTC";}
     public static Connection getConnexion() {
         Connection cnx = null;
         try {

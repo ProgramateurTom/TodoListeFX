@@ -1,5 +1,6 @@
 package appli.accueil;
 
+import Session.SessionUtilisateur;
 import appli.StartApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -37,7 +38,12 @@ public class LoginController {
                 erreurLabel.setText("Connexion réusi !");
                 System.out.println("Connexion réusi !");
                 System.out.println("Redirection....");
+                SessionUtilisateur.getInstance().sauvegardeSession(user);
             }
+        }
+        Utilisateur utilisateurActuel = SessionUtilisateur.getInstance().getUtilisateur();
+        if (utilisateurActuel != null) {
+            System.out.println("Utilisateur connecté : " + utilisateurActuel.getNom());
         }
     }
     public UtilisateurRepository getUserRepository(){return userRepository;}
@@ -51,5 +57,14 @@ public class LoginController {
         System.out.println("Redirection...");
         StartApplication.changeScene("accueil/inscription");
     }
+
     private UtilisateurRepository userRepository = new UtilisateurRepository();
+
+    @FXML
+    protected void handleLogout() {
+        SessionUtilisateur.getInstance().deconnecter();
+        System.out.println("Utilisateur déconnecté.");
+        // Redirection vers la page de connexion
+    }
+
 }
