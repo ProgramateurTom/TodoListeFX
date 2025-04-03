@@ -12,9 +12,7 @@ public class ConnexionController {
     @FXML
     protected void onHelloButtonClick(){System.out.println("Welcome to JavaFX Application!");}
     @FXML
-    protected void blackAndWhiteMonsters() {
-        System.out.println("Prepare for magic and monsters!");}
+    protected void blackAndWhiteMonsters(){System.out.println("Prepare for magic and monsters!");}
     @FXML
-    protected void connexion(){
-        System.out.println("Connectez-vous!");}
+    protected void connexion(){System.out.println("Connectez-vous!");}
 }

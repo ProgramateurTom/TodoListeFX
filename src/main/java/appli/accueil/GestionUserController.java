@@ -32,6 +32,7 @@ public class GestionUserController implements Initializable {
             //Ajout de la colonne dans notre tableau
             tableauUser.getColumns().add(maCol);
         }
-        tableauUser.getItems().addAll(UtilisateurRepository.getTousLesUtilisateurs);
+        UtilisateurRepository userrepo = new UtilisateurRepository();
+        tableauUser.getItems().addAll(userrepo.getTousLesUtilisateurs());
     }
 }

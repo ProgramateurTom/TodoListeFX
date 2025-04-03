@@ -19,10 +19,6 @@ public class SessionUtilisateur {
             this.utilisateurConnecte = utilisateur;
         }
     }
-    public Utilisateur getUtilisateur() {
-        return utilisateurConnecte;
-    }
-    public void deconnecter() {
-        utilisateurConnecte = null;
-    }
+    public Utilisateur getUtilisateur() {return utilisateurConnecte;}
+    public void deconnecter() {utilisateurConnecte = null;}
 }

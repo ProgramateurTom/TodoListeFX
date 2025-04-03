@@ -26,6 +26,8 @@ public class Utilisateur {
         this.email = email;
         this.motDePasse = modDePasse;
     }
+
+
     public int getIdUtilisateur() {return idUtilisateur;}
     public void setIdUtilisateur(int idUtilisateur) {this.idUtilisateur = idUtilisateur;}
     public String getNom(){return nom;}
@@ -40,5 +42,4 @@ public class Utilisateur {
     public void setRole(String role){this.role = role;}
     @Override
     public String toString(){return  nom +" "+prenom;}
-
 }
