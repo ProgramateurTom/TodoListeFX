@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.accueil.GestionUserController">
    <children>
-      <TableView fx:id="tableauUser" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <TableView fx:id="tableauUser" layoutX="200.0" layoutY="100.0" onMouseClicked="#initialize" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="Suppretion" disable="true" layoutX="264.0" layoutY="340.0" mnemonicParsing="false" onAction="#initialize" text="Supprimer" textAlignment="CENTER" />
    </children>
 </AnchorPane>

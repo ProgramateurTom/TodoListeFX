@@ -3,6 +3,7 @@ package appli.accueil;
 import Repository.UtilisateurRepository;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -35,4 +36,6 @@ public class GestionUserController implements Initializable {
         UtilisateurRepository userrepo = new UtilisateurRepository();
         tableauUser.getItems().addAll(userrepo.getTousLesUtilisateurs());
     }
+    @FXML
+    private Button Suppretion;
 }
