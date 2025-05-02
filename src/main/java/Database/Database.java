@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class Database {
     private static final String SERVEUR = "localhost:3307";
-    private static final String NOM_BDD = "SLAM1_todolist";
+    private static final String NOM_BDD = "todolistfx";
     private static final String UTILISATEUR = "root";
     private static final String MOT_DE_PASSE = "";
     private static String getUrl() {return "jdbc:mysql://" + SERVEUR + "/" + NOM_BDD + "?serverTimezone=UTC";}

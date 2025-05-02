@@ -8,7 +8,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.Utilisateur;
-
+import Database.Database;
 import java.net.URL;
 import java.util.ResourceBundle;
 

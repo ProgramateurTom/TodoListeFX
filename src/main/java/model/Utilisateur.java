@@ -1,5 +1,7 @@
 package model;
 
+import Database.Database;
+
 public class Utilisateur {
     private int idUtilisateur;
     private String nom;
