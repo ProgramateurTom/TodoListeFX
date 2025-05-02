@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class UtilisateurRepository {
+    public static Utilisateur getTousLesUtilisateurs;
     private Connection cnx;
     public UtilisateurRepository() {this.cnx = Database.getConnexion();}
     public boolean ajouterUtilisateur(Utilisateur utilisateur) {
