@@ -1,11 +1,15 @@
 package model;
 
+import Database.Database;
+
 public class Liste {
     private int idListe;
     private String nom;
-    public Liste(int idListe, String nom) {
+    private String role;
+    public Liste(int idListe, String nom, String role) {
         this.idListe = idListe;
         this.nom = nom;
+        this.role = role;
     }
     public Liste(String nom) {this.nom = nom;}
     public int getIdListe() {return idListe;}

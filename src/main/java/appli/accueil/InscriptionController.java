@@ -4,6 +4,10 @@ import appli.StartApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import java.io.IOException;
+<<<<<<< HEAD
+=======
+import Database.Database;
+>>>>>>> 118ec171feed4aa58c6333a14115677c5f7d3358
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import model.Utilisateur;

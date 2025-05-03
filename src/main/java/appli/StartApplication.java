@@ -4,6 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+<<<<<<< HEAD
+=======
+import Database.Database;
+>>>>>>> 118ec171feed4aa58c6333a14115677c5f7d3358
 import java.io.IOException;
 
 public class StartApplication extends Application {

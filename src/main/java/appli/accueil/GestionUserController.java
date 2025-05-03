@@ -8,6 +8,10 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.Utilisateur;
+<<<<<<< HEAD
+=======
+import Database.Database;
+>>>>>>> 118ec171feed4aa58c6333a14115677c5f7d3358
 import java.net.URL;
 import java.util.ResourceBundle;
 
