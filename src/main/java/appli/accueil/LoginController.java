@@ -9,10 +9,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import model.Utilisateur;
 import Repository.UtilisateurRepository;
-<<<<<<< HEAD
-=======
 import Database.Database;
->>>>>>> 118ec171feed4aa58c6333a14115677c5f7d3358
 import java.io.IOException;
 
 public class LoginController {
